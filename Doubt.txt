@@ -1,0 +1,35 @@
+
+
+Doubt ---> 14/4/2025 (ANSWER PAGE NO - NULL) (INTERVIEW QUESTION OF INTRODUCATION --- PAGE (1))
+Q1 Sir Yesteday  You Have Explain The Frontent and Backend Introducation so sir i want to learn in  deep How They frontend and backend communicate with each other ? and What is The Uses of WebSockets in communicate ?
+Q2 What is CORS and how does it sir it affect frontend-backend interaction ?
+Q3 Sir in Web Application We Have Listen That Some Time is Server Down Due to Load So Sir So  How We Can  Design full stack Web for millions of users Without Any Server Down ? 
+Q4 Sir In Companys Sir What The Issue Is Come When Frontent Developer is From Another Country Backend Developer is From Another Country ? What Issue We Will Get During Developing The Full Stack Web Application ?
+Q5 What are the major challenges in full stack development when sir we dealing with authentication and session management?
+
+
+
+
+Doubt ---> 15/4/2025
+Q1 How To Create A Custom Boilerplate In VS CODE ?
+Q2 what is The Size Of H1 , H2 , H3 , H4 , H5 , H6 in By Defual in Pixel ?
+Q3
+
+
+
+
+
+HTML DOUBT
+How to Create Custom Boilerplate Code ?
+
+CSS 
+GRID ? Flex ? Flex grow ?Flex Stink
+align self
+
+JS 
+// string + string = string
+// string + number = string
+// number + string = string
+// number + number = number
+10 - "1";  why 9 out but is there 
+

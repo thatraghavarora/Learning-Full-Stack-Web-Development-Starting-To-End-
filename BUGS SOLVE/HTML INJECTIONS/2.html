@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Injection - innerHTML using get request or search bar</title>
+</head>
+<body>
+
+  <form method="GET">
+    <label for="Search Bar">Search</label><br>
+    <input type="text" name="search" id="search">
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <div>
+    <h3>Your Search Result:</h3>
+    <div id="display"></div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search); //parmemter create
+    const result = urlParams.get('search'); //search bar value
+
+    
+      
+      document.getElementById("display").innerText = result;
+  
+  </script>
+
+</body>
+</html>

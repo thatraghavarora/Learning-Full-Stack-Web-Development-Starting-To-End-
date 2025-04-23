@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Injection - eval() Vulnerability</title>
+</head>
+<body>
+
+  <h2>Enter a number to calculate:</h2>
+  <form method="GET">
+    <label for="number">Number: </label>
+    <input type="text" name="number" id="number">
+    <button type="submit">Calculate</button>
+  </form>
+
+  <hr>
+
+  <div id="result">
+    <h3>Calculated Result:</h3>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const number = urlParams.get('numbers');
+
+   
+      document.getElementById("output").innerHTML = eval(number);
+    
+  </script>
+
+</body>
+</html>
