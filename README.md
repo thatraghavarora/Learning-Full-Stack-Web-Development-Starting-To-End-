@@ -5,8 +5,7 @@
 <h2>Full Stack Web Development 📚</h2>
 
 <h3>Frontend 🌐</h3>
-<p><em>How can I design a web page?</em><br>
-<strong>Full Stack Web Developer</strong></p>
+
 
 <h4>Technologies:</h4>
 <ul>
@@ -53,7 +52,7 @@
 <hr>
 
 <h3>Bonus Content 💡</h3>
-<p>By the way, I'm also a <strong>Cybersecurity Researcher</strong> 🔒. I've secured a lot of organizations like <strong>NASA</strong>, <strong>WHO</strong>, <strong>Nokia</strong>, and many others. Here, I’ll show you how to <strong>solve security bugs</strong> and even <strong>break websites</strong> using HTML, as well as some <strong>security tips</strong> using emojis. 🐞</p>
+<p>By the way, I'm also a <strong>Cybersecurity Researcher</strong> 🔒. I've secured a lot of organizations like <strong>NASA</strong>, <strong>WHO</strong>, <strong>Nokia</strong>, and many others. Here, I’ll show you how to <strong>solve security bugs</strong> and even <strong>break websites</strong> using HTML, as well as some <strong>security tips</strong> </p>
 
 <hr>
 
