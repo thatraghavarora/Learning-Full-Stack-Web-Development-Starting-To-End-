@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom,
+                    rgba(255, 153, 51, 0.8) 0px,
+                    /* Saffron starts */
+                    rgba(255, 153, 51, 0.8) 33%,
+                    /* Saffron ends at 33% */
+                    rgba(255, 255, 255, 0.8) 33%,
+                    /* White starts */
+                    rgba(255, 255, 255, 0.8) 66%,
+                    /* White ends at 66% */
+                    rgba(19, 136, 8, 0.8) 66%,
+                    /* Green starts */
+                    rgba(19, 136, 8, 0.8) 100%
+                    /* Green ends */
+                );
+
+        }
+
+        form {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name">
+        <br>
+        <label for="last_name">Last Name</label>
+        <input type="text" id="first_name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <br>
+        <label for="Course">No. of Course Enroll</label>
+        <input type="number" id="Course">
+        <br>
+        <label for="DOB">Date of Birth</label>
+        <input type="date" id="DOB">
+        <br>
+        <label for="Number">Phone Number</label>
+        <input type="number" id="Number">
+        <br>
+        <label>Gender </label>
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <input type="radio" name="Gender">Other
+        <br>
+        <input type="checkbox">Frontend<br>
+        <input type="checkbox">Backend<br>
+
+        <input type="button" value="Submit">
+
+
+    </form>
+</body>
+
+</html>
