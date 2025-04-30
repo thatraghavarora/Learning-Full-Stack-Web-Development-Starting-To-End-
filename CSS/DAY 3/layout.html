@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Example</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+
+    }
+    header{
+      height: 10vh;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    nav{
+      height: 50vh;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    main,aside{
+      height: 50vh;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    header, nav, main, aside, footer {
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    header { background-color: #333; }
+    nav { background-color: #555; }
+    main { background-color: #777; }
+    aside { background-color: #999; }
+    footer { background-color: #444; }
+
+    .container {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    }
+
+    header { grid-area: header; }
+    nav { grid-area: nav; }
+    main { grid-area: main; }
+    aside { grid-area: aside; }
+    footer { grid-area: footer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>Main Content</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

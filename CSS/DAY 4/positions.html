@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      margin: 40px;
+      padding: 20px;
+      border: 2px solid #000;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: skyblue;
+      margin-bottom: 20px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: orange;
+    }
+
+    .absolute-wrapper {
+      position: relative;
+      height: 200px;
+      border: 2px dashed red;
+    }
+
+    .absolute-box {
+      position: absolute;
+    
+      background-color: crimson;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: green;
+      z-index: 1000;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>Position: static (default)</h2>
+    <div class="box">Static Box</div>
+  </div>
+
+  <div class="section">
+    <h2>Position: relative</h2>
+    <div class="box relative-box">Relative Box</div>
+  </div>
+
+  <div class="section">
+    <h2>Position: absolute</h2>
+    <div class="absolute-wrapper">
+      <div class="box absolute-box">Absolute Box</div>
+    </div>
+  </div>
+
+  <div class="section" style="height: 1000px;">
+    <h2>Scroll Down for Fixed and Sticky</h2>
+
+    <div class="box sticky-box">Sticky Box (Sticks on top)</div>
+    <p>Keep scrolling to see the fixed box appear.</p>
+    <p style="margin-top: 600px;">Almost there...</p>
+  </div>
+
+  <div class="box fixed-box">Fixed Box (Bottom-Right)</div>
+
+</body>
+</html>

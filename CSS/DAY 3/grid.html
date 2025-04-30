@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Grid Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .box {
+      background: #007bff;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .header {
+      grid-column: 1 / -1;
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 24px;
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="header">📦 Advanced Grid Layout</div>
+
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+    <div class="box">Item 4</div>
+    <div class="box">Item 5</div>
+    <div class="box">Item 6</div>
+    <div class="box">Item 7</div>
+    <div class="box">Item 8</div>
+    <div class="box">Item 9</div>
+    <div class="box">Item 10</div>
+    <div class="box">Item 11</div>
+    <div class="box">Item 12</div>
+    <div class="box">Item 13</div>
+    <div class="box">Item 14</div>
+    <div class="box">Item 15</div>
+    <div class="box">Item 16</div>
+    
+    <div class="footer">© 2025 Raghav Grid Example</div>
+  </div>
+
+</body>
+</html>

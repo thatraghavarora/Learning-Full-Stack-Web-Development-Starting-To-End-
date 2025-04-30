@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Car on Road</title>
+  <style>
+    body {
+      margin: 0;
+      background:bisque;
+      overflow: hidden;
+    }
+
+    .road {
+      position: relative;
+      background: #333;
+      height: 200px;
+      width: 100%;
+      top: 400px;
+      box-shadow: 0 -10px 20px #222 inset;
+    }
+
+    .lines {
+      position: absolute;
+      top: 90px;
+      width: 100%;
+      height: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .line {
+      width: 60px;
+      height: 6px;
+      background: white;
+      animation: moveLines 10s linear infinite;
+    }
+
+    @keyframes moveLines {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .car {
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      background: red;
+      border-radius: 10px;
+      top: 400px;
+      left: -120px;
+      animation: driveCar 5s linear infinite;
+    }
+
+    .car::before,
+    .car::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 50%;
+      bottom: -10px;
+    }
+
+    .car::before {
+      left: 10px;
+    }
+
+    .car::after {
+      right: 10px;
+    }
+
+    @keyframes driveCar {
+      0% { left: -120px; }
+      100% { left: 110%; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="road">
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>  
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  
+  <div class="car"></div>
+
+</body>
+</html>
