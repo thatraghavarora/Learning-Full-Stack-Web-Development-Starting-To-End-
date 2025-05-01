@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            display: flex;
+            background-color: blue;
+            height: 100vh;
+            position: relative;
+        }
+        .item1{
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            background-color: aqua;
+            height: 20vh;
+            position: absolute;
+            width: 20vw;
+            z-index: 3;
+        }
+        .item2{
+            padding: 10px;
+            margin: 50px;
+            position: absolute;
+            display: flex;
+            background-color: rgb(168, 143, 20);
+            height: 20vh;
+            width: 20vw;
+            z-index: 2;
+            
+        }
+        .item3{
+            padding: 10px;
+            margin: 100px;
+            position: absolute;
+            display: flex;
+            background-color: rgb(203, 5, 5);
+            height: 20vh;
+            width: 20vw;
+            z-index: 1;
+        }
+    </style>
+    <div class="box">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+</html>
