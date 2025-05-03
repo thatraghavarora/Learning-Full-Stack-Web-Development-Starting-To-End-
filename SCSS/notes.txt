@@ -1,0 +1,28 @@
+What Is SCSS
+-> SCSS is a powerful preprocessor that extends CSS.
+->It improves maintainability and code reusability.
+=>Features like variables, mixins, nesting, and control structures make styling more dynamic and scalable.
+
+❓ Difference Between Sass and SCSS
+
+Feature         (Indented Syntax)	                 SCSS (Sassy CSS)
+File Extension |.sass	                             | .scss
+Syntax Style   |No curly braces {} or semicolons ;	 |Uses standard CSS syntax
+Readability	   |Shorter but harder to read for       |More familiar to CSS users
+               | beginners                           |
+Compatibility  |Not compatible with regular CSS	     |Fully compatible with CSS   
+               
+1 Operators 
+-> We Can Uses Operators In SCSS 
+2 Variables
+-> We Can Create Variables Inside the Css 
+3 Nesting
+-> It Help To Nesting One Inside One Element to Easy To Target  
+4 Mixins & Include 
+-> Its Help To Make A Css Compontents
+5 Parameters
+-> In Minins It Help Take A Permeter Value Help To Change according to need            
+6 Partials 
+-> Create A Seprate Page for each Elements
+7 Import 
+-> Importing Partials in page 
