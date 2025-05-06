@@ -1,0 +1,28 @@
+body{
+    background-image: linear-gradient(#00000052 , #0000005b ),url(/images/login-bg.jpeg);
+    height: 100vh;
+}
+.login-top{
+    width: 100vw;
+    height: 70px;
+   
+    padding:0px 20px;
+    display: flex;
+    align-items: center;
+}
+.login-top img{
+    width: 100px;
+}
+.login-box{
+    background-color: #000000d1;
+    width: 250px;
+    height: 330px;
+    padding: 20px;
+
+}
+.small-size{
+    
+}
+.form-control{
+    box-shadow: none !important; 
+}
