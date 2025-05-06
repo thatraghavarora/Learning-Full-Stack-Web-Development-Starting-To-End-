@@ -1,0 +1,195 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800; /* or use 'bold' */
+    
+
+    width: 100vw;
+    background-image: linear-gradient(#000000dd , #00000085 ),url(/images/login-bg.jpeg);
+}
+.container{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+}
+.btn{
+    background-color: #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    margin-top: 100px;
+}
+.text{  
+    font-size: 50px;
+    align-self: center;
+    font-weight: bolder;
+    
+}
+.Get-start{
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    
+   
+}
+.Email{
+    height: 8vh;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-shadow: none;
+    outline: none;
+
+    padding: 20px;
+    box-shadow: none;
+    background: linear-gradient(#00000044 , #00000046)}
+.mybox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+.choose{
+    padding: 5px;
+    background: transparent;
+    color: white;
+    background-color: #000;
+    display: flex;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.trending-section {
+    padding: 100px 20px;
+    margin-top: 20px;
+    border-top: 2px solid #e50914;
+    border-radius: 100px 100px 0px 0px;
+    
+    background: radial-gradient(circle at top, #111122, #000);
+  }
+
+  .trending-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+
+  }
+
+  .trending-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+  }
+
+  .trending-item {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+  }
+
+  .trending-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .trending-number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 1;
+  }
+  .reasons-section {
+    padding: 60px 20px;
+  }
+
+  .reason-card {
+    background: linear-gradient(to bottom, #1e1e2f, #0a0a0a);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    min-height: 300px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .reason-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .reason-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .reason-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .reason-desc {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .faq-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .accordion-item {
+    background-color: #2d2d2d;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  .accordion-button {
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: none;
+    box-shadow: none;
+  }
+
+  .accordion-button::after {
+    filter: invert(1);
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #444;
+  }
+
+  .accordion-body {
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
