@@ -1,0 +1,32 @@
+Beginner Level
+Digital Clock / Countdown Timer
+(Basic time manipulation and DOM updates)
+
+Calculator
+(Simple event handling and arithmetic logic)
+
+To-Do List App
+(Task addition, deletion, and local storage)
+
+Quiz App
+(Conditional logic, array looping, and scoring)
+
+⚙️ Intermediate Level
+Image Slider / Carousel
+(DOM manipulation with intervals or navigation controls)
+
+Typing Speed Tester
+(Timers, text comparison, accuracy calculation)
+
+Weather App (Using API)
+(API integration, asynchronous JavaScript using fetch())
+
+Expense Tracker
+(Form handling, local storage, dynamic calculations)
+
+🚀 Advanced Level
+E-commerce Product Page (Cart System)
+(State management, cart updates, total price calculation, storage)
+
+Chat App (with Firebase)
+(Authentication, database, real-time communication using Firebase)

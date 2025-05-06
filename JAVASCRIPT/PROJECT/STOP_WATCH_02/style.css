@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.box{
+    padding: 40px;
+    font-size: 50px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(231, 231, 231);
+}
+.btn{
+    padding: 30px;
+    background-color: var(--clr);
+    border: none;
+    color: white;
+}
+.card{
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 25px;
+}

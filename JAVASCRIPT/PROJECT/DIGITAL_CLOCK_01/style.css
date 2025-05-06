@@ -1,0 +1,29 @@
+/* Full-screen background and center alignment */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #00FF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Clock container */
+.container {
+    font-size: 80px;
+    font-weight: bold;
+    background: #111;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00FF00;
+    border: 2px solid #00FF00;
+    letter-spacing: 5px;
+}
+
+/* Colon spacing */
+.container span {
+    padding: 0 8px;
+}
