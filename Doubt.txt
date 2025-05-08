@@ -1,19 +1,24 @@
 
+1. How do the frontend and backend communicate with each other in a web application?
+2. What are WebSockets, and how are they used in frontend-backend communication?
+3. What is CORS, and how does it affect the interaction between frontend and backend?
+4. How can we design a full-stack web application that supports millions of users without server downtime?
+5. What challenges arise when frontend and backend developers work from different countries or teams?
+6. What are the major challenges in full-stack development related to authentication and session management?
+7. How can I create a custom boilerplate project in Visual Studio Code?
+8. What are the default pixel sizes for HTML heading tags (H1 to H6)?
+9. How are HTML elements different from HTML tags?
+10. Explain Output Tag , Keygen ,HTML entities ,  Meter
+11.Does margin-top and margin-bottom have an effect on inline elements?
+12. How does a browser determine what elements match a CSS selector?
+13. How does CSS work under the hood?
+14. How case-sensitive is CSS?
 
-Doubt ---> 14/4/2025 (ANSWER PAGE NO - NULL) (INTERVIEW QUESTION OF INTRODUCATION --- PAGE (1))
-Q1 Sir Yesteday  You Have Explain The Frontent and Backend Introducation so sir i want to learn in  deep How They frontend and backend communicate with each other ? and What is The Uses of WebSockets in communicate ?
-Q2 What is CORS and how does it sir it affect frontend-backend interaction ?
-Q3 Sir in Web Application We Have Listen That Some Time is Server Down Due to Load So Sir So  How We Can  Design full stack Web for millions of users Without Any Server Down ? 
-Q4 Sir In Companys Sir What The Issue Is Come When Frontent Developer is From Another Country Backend Developer is From Another Country ? What Issue We Will Get During Developing The Full Stack Web Application ?
-Q5 What are the major challenges in full stack development when sir we dealing with authentication and session management?
 
 
 
 
-Doubt ---> 15/4/2025
-Q1 How To Create A Custom Boilerplate In VS CODE ?
-Q2 what is The Size Of H1 , H2 , H3 , H4 , H5 , H6 in By Defual in Pixel ?
-Q3
+
 
 
 

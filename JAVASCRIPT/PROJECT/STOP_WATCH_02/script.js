@@ -3,7 +3,7 @@ let startbtn = document.getElementById("Start");
 let stopbtn = document.getElementById("Stop");
 let Restart = document.getElementById("Restart");
 
-let msec = 0;
+let msec = 00;
 let sec = 0;
 let minsec = 0;
 let timerid = null;

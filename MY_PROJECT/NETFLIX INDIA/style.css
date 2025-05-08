@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+  }
+  .hero {
+    background: linear-gradient(#000000be, #000000b7), url(images/login-bg.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  #box{
+    margin-top: 80px;
+  }
+  .email-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .form-control {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #666;
+    color: white;
+  }
+
+  .form-control::placeholder {
+    color: #ccc;
+  }
+
+  .btn-netflix {
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+  }
+
+  .btn-netflix:hover {
+    background-color: #f40612;
+  }
+
+  .arrow-icon {
+    margin-left: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem 0;
+  }
+
+  .slider-container {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+  }
+
+ .scrolling-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+  .card-scroll {
+    flex: 0 0 auto;
+    width: 200px;
+    scroll-snap-align: start;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .card-scroll img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .slider-arrow.left {
+    left: -20px;
+  }
+
+  .slider-arrow.right {
+    right: -20px;
+  }
+
+  @media (max-width: 768px) {
+    .slider-arrow {
+      display: none;
+    }
+  }
+  .feature-card {
+    background: linear-gradient(to bottom, #0f0f1b, #1e1131);
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 100%;
+  }
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 1.5rem;
+  }
+/* Background and overall structure */
+.accordion-item {
+    background-color: #141414; /* Dark background similar to Netflix */
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-color: #141414; /* Same dark color for button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #141414; /* Keep it dark when collapsed */
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #e50914; /* Netflix red when expanded */
+    color: #fff;
+  }
+  
+  .accordion-body {
+    background-color: #333; /* Darker background for the body */
+    color: #fff; /* White text for the body */
+    font-size: 14px;
+    padding: 20px;
+    border-top: 1px solid #444; /* Slight border to differentiate the body */
+    border-radius: 0 0 10px 10px;
+  }
+  
+  
+  
+  /* Ensure the accordion is centered in a card-style */
+  .accordion-item {
+    max-width: 600px; /* Limit width */
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .accordion-body {
+    padding: 15px;
+  }
+  
