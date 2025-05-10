@@ -13,20 +13,6 @@
 12. How does a browser determine what elements match a CSS selector?
 13. How does CSS work under the hood?
 14. How case-sensitive is CSS?
-
-
-
-
-
-
-
-
-
-
-
-HTML DOUBT
-How to Create Custom Boilerplate Code ?
-
 CSS 
 GRID ? Flex ? Flex grow ?Flex Stink
 align self

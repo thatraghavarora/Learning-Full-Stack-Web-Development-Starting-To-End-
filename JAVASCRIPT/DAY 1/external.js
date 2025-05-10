@@ -1,0 +1,1 @@
+// alert("Hello Everyone");  it is used To alert the page 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Stopwatch</title>
+    <!-- ✅ Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #timer {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            min-width: 100px;
+            font-size: 1.2rem;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="timer" class="text-primary">00 : 00 : 00</h1>
+    
+    <div class="d-flex justify-content-center">
+        <button id="startbtn" class="btn btn-success">Start</button>
+        <button id="pausebtn" class="btn btn-warning">Pause</button>
+        <button id="resetbtn" class="btn btn-danger">Reset</button>
+    </div>
+
+    <script>
+        let msec = 0;
+        let sec = 0;
+        let min = 0;
+        let timerid = null;
+
+        const timer = document.getElementById("timer");
+        const startbtn = document.getElementById("startbtn");
+        const pausebtn = document.getElementById("pausebtn");
+        const resetbtn = document.getElementById("resetbtn");
+
+        function updateTime() {
+            msec += 1;
+
+            if (msec === 100) {
+                msec = 0;
+                sec += 1;
+            }
+
+            if (sec === 60) {
+                sec = 0;
+                min += 1;
+            }
+
+            let msecString = msec < 10 ? `0${msec}` : msec;
+            let secString = sec < 10 ? `0${sec}` : sec;
+            let minString = min < 10 ? `0${min}` : min;
+
+            timer.innerHTML = `${minString} : ${secString} : ${msecString}`;
+        }
+
+        startbtn.addEventListener('click', () => {
+            if (timerid !== null) clearInterval(timerid);
+            timerid = setInterval(updateTime, 10);
+        });
+
+        pausebtn.addEventListener('click', () => {
+            clearInterval(timerid);
+            timerid = null;
+        });
+
+        resetbtn.addEventListener('click', () => {
+            clearInterval(timerid);
+            timerid = null;
+            msec = sec = min = 0;
+            timer.innerHTML = `00 : 00 : 00`;
+        });
+    </script>
+
+</body>
+</html>

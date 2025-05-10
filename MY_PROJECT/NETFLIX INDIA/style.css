@@ -136,65 +136,46 @@ body, html {
     height: 48px;
     margin-top: 1.5rem;
   }
-/* Background and overall structure */
-.accordion-item {
-    background-color: #141414; /* Dark background similar to Netflix */
-    border: none;
-    border-radius: 10px;
+  .accordion-item {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000;
     margin-bottom: 10px;
   }
   
   .accordion-button {
-    background-color: #141414; /* Same dark color for button */
-    color: #fff; /* White text color */
+    background-color: #333;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
     border: none;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
   }
   
-  .accordion-button:focus {
-    box-shadow: none;
-  }
-  
-  .accordion-button.collapsed {
-    background-color: #141414; /* Keep it dark when collapsed */
-  }
   
   .accordion-button:not(.collapsed) {
-    background-color: #e50914; /* Netflix red when expanded */
+    background-color: #444;
     color: #fff;
   }
   
   .accordion-body {
-    background-color: #333; /* Darker background for the body */
-    color: #fff; /* White text for the body */
-    font-size: 14px;
-    padding: 20px;
-    border-top: 1px solid #444; /* Slight border to differentiate the body */
-    border-radius: 0 0 10px 10px;
+    background-color: #222;
+    color: #fff;
+  }
+  .footer-netflix {
+    background-color: #000;
   }
   
-  
-  
-  /* Ensure the accordion is centered in a card-style */
-  .accordion-item {
-    max-width: 600px; /* Limit width */
-    width: 100%;
-    margin: 20px auto;
-    border-radius: 15px;
-    overflow: hidden;
+  .footer-link {
+    color: #aaa;
+    text-decoration: underline;
   }
   
-  .accordion-header {
-    display: flex;
-    justify-content: center;
+  .footer-link:hover {
+    color: #fff;
+    text-decoration: none;
   }
   
-  .accordion-body {
-    padding: 15px;
+  .footer-note {
+    color: #777;
   }
   
