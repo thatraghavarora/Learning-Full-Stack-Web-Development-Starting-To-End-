@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operater In JS</title>
 </head>
+
 <body>
     <script>
         console.log("Operater In JS");
         console.log("Arithmetic Operater") //Arithmetic Operater
         let a = 10;
-        let b=5;
-        console.log("A+B=",a+b);
-        console.log("A-B=",a-b);
-        console.log("A*B=",a*b);
-        console.log("A/B=",a/b);
-        console.log("Power of a b",a**b);
-        console.log("Remender",a%b);
-        console.log("A+",a++); //++a This Is also There
+        let b = 5;
+        console.log("A+B=", a + b);
+        console.log("A-B=", a - b);
+        console.log("A*B=", a * b);
+        console.log("A/B=", a / b);
+        console.log("Power of a b", a ** b);
+        console.log("Remender", a % b);
+        console.log("A+", a++); //++a This Is also There
         console.log(a);
-        console.log("A--",a--);
+        console.log("A--", a--);
 
         console.log("Assignment Operater In JS");
-        console.log("A+=a", a+=a);
-        console.log("A-=a", a-=a);
-        console.log("A*=a", a*=a);
-        console.log("A/=a", a/=a);
+        console.log("A+=a", a += b);
+        console.log("A-=a", a -= b);
+        console.log("A*=a", a *= b);
+        console.log("A/=a", a /= b);
+        console.log("A%=a", a %= b);
+
+        console.log("Comparison  Operater In JS");
+        let p = 10, q = "10";
+
+        console.log("p == q:", p == q);    // true (value same)
+        console.log("p === q:", p === q);  // false (type different)
+        console.log("p != q:", p != q);    // false
+        console.log("p !== q:", p !== q);  // true
+        console.log("p > 5:", p > 5);      // true
+        console.log("p <= 10:", p <= 10);  // true
+
+
+        console.log("Logical  Operater In JS");
+
+        let isOnline = true;
+        let hasBattery = false;
+
+        console.log("AND (&&):", isOnline && hasBattery); // false
+        console.log("OR (||):", isOnline || hasBattery);  // true
+        console.log("NOT (!):", !isOnline);               // false
+
+        console.log("Bitwise Operators In JS");
+
+        let m = 5;  // 0101 in binary
+        let n = 3;  // 0011 in binary
+
+        console.log("Bitwise AND:", m & n);  // 1 (0001)
+        console.log("Bitwise OR:", m | n);   // 7 (0111)
+        console.log("Bitwise XOR:", m ^ n);  // 6 (0110)
+        console.log("Bitwise NOT:", ~m);     // -6
+        console.log("Left Shift:", m << 1);  // 10 (1010)
+        console.log("Right Shift:", m >> 1); // 2 (0010)
+
+        console.log("String Operators In JS");
+
+        let firstName = "John";
+        let lastName = "Doe";
+
+        console.log("Full Name:", firstName + " " + lastName); // John Doe
+
+        firstName += "ny";
+        console.log("Modified Name:", firstName); // Johnny
+
+        console.log("Type Operators In JS");
+
+        let age = 25;
+        let isStudent = true;
+
+        console.log("Type of age:", typeof age);         // number
+        console.log("Type of isStudent:", typeof isStudent); // boolean
+
+        let date = new Date();
+        console.log("date instanceof Date:", date instanceof Date); // true
+
+
+
+
+
+
+
 
 
     </script>
 </body>
+
 </html>
