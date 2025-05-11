@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type In JS</title>
+</head>
+<body>
+    <script>
+// premative Data Types      
+// nn bb ss u 
+     //number 
+     //null 
+     //boolen
+     //bigint 
+     //symbol 
+     //string 
+     //undefine 
+let a = 1;
+let b = null;
+let c = true;
+let d = BigInt(787) + BigInt(3);
+let e = Symbol("Screat Message");
+let f = "String";
+let g = undefined;
+
+console.log(typeof a , b ,c, d, e,f,g);
+// non premative Data Types 
+const item = {
+    "Hello":"Hi",
+    "1":"2",
+    "How Are You": "I am fine",
+    "YES":true
+}
+console.log(typeof item);
+console.log(typeof item["1"]);
+
+    </script>
+</body>
+</html>
