@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings </title>
+</head>
+<body>
+    <script>
+
+        // ES5
+        var Name = "Raghav"
+        console.log(Name);
+        console.log(Name.length);
+        console.log(Name[0]);
+        console.log(Name[1]);
+        console.log(Name[2]);
+        console.log(Name[3]);
+        console.log(Name[4]);
+        console.log(Name[5]);
+        console.log(Name[6]); //undefined
+
+        //ES6
+
+        var Myname = "Raghav"
+        var friends = "Adarsh"
+
+        console.log(`I am ${Myname} . My Best Friend is ${friends}`);
+
+        // How We Can Print ' In Console 
+
+        console.log('Don\'t Know')
+
+
+        // Gussa The Output of The Code 
+        let hello = "Raghav\"";
+        console.log(hello.length);
+        let best = "Luck"
+        console.log(best.toUpperCase());
+        console.log(best.toLocaleLowerCase());
+
+        console.log(best.slice(2,4));
+
+        console.log(best.slice(1));
+
+        console.log(best.replace("k" , "king")); // Replace of String
+
+        console.log(hello.concat("is the friend of ", friends, " Okey")); // Joint The 2 strings
+
+
+        let friend2 = "         Kriti     ";   // delete The Back Spaces
+        console.log(friend2.trim())
+
+        
+
+        </script>
+</body>
+</html>

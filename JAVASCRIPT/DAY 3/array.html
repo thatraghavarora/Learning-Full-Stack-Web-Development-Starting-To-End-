@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array </title>
+</head>
+<body>
+    <script>
+        let Marks = [1,2,3, "Hello" , true];
+        console.log(Marks[1]);
+        console.log(Marks.length) // To Count The Length of String
+        Marks[6] = "Jai" // Adding New Elements To Array
+          console.log(Marks);
+        Marks[0] = "RAGHAV" // Changing Value of New Array 
+        console.log(Marks);
+
+        let mynewarrar = [1,2,3,4,5];
+        let realarrar = mynewarrar.toString() // Convect the Array In String
+        console.log(realarrar)
+
+        let c = mynewarrar.join(" and ")
+        console.log(c) // jointing in array 
+        
+        let r = mynewarrar.pop() // pop is used to remove the last element of array
+        console.log(r)
+
+        let add = mynewarrar.push(56)
+        console.log(add,"Adding The Element.....");
+         
+        console.log( mynewarrar)
+
+        let shifting = mynewarrar.shift()
+        console.log(shifting);
+        console.log("Removing The First Elements", shifting) // removing the elements from top of arrau
+
+        let unshifting = mynewarrar.unshift(5)
+        console.log(unshifting);
+        console.log("Add A New in Top  ", unshifting);
+        console.log(mynewarrar);
+    </script>
+</body>
+</html>
