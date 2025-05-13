@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+</head>
+<body>
+    <script>
+function getRandomNumber() {
+  return Math.floor(Math.random() * 101); // 0 to 100 inclusive
+}
+
+const random = getRandomNumber();
+console.log("Random Number:", random);
+alert(random); // Optional, for debugging
+
+let chances = 3;
+let guessed = false;
+
+for (let i = 0; i < 3; i++) {
+  let num = prompt("Enter your guess (0 to 100):");
+  num = Number(num);
+
+  if (num === random) {
+    alert("🎉 You guessed the right number!");
+    guessed = true;
+    break; // exit the loop on correct guess
+  } else if (num > random) {
+    alert("📉 Too high! Try a smaller number.");
+  } else if (num < random) {
+    alert("📈 Too low! Try a bigger number.");
+  }
+
+  chances--;
+  alert(`❗ Chances left: ${chances}`);
+}
+
+// After the loop ends, if the user didn’t guess
+if (!guessed) {
+  alert(`❌ Game Over! The number was ${random}`);
+}
+
+    
+
+    </script>
+</body>
+</html>

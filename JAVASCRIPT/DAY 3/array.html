@@ -7,37 +7,83 @@
 </head>
 <body>
     <script>
+        //Length
         let Marks = [1,2,3, "Hello" , true];
         console.log(Marks[1]);
         console.log(Marks.length) // To Count The Length of String
+
+        // Adding New Elements 
         Marks[6] = "Jai" // Adding New Elements To Array
-          console.log(Marks);
-        Marks[0] = "RAGHAV" // Changing Value of New Array 
         console.log(Marks);
 
+         // Changing Value of New Array 
+        Marks[0] = "RAGHAV"
+        console.log(Marks);
+
+        // toString
         let mynewarrar = [1,2,3,4,5];
         let realarrar = mynewarrar.toString() // Convect the Array In String
         console.log(realarrar)
 
+        //join 
         let c = mynewarrar.join(" and ")
         console.log(c) // jointing in array 
-        
+
+        //pop
         let r = mynewarrar.pop() // pop is used to remove the last element of array
         console.log(r)
-
         let add = mynewarrar.push(56)
         console.log(add,"Adding The Element.....");
-         
-        console.log( mynewarrar)
+        console.log(mynewarrar)
 
+        //shift
         let shifting = mynewarrar.shift()
         console.log(shifting);
         console.log("Removing The First Elements", shifting) // removing the elements from top of arrau
-
+        
+        // unshift
         let unshifting = mynewarrar.unshift(5)
         console.log(unshifting);
-        console.log("Add A New in Top  ", unshifting);
+        console.log("Add A New in Top  ", unshifting); // Add A New Element of Top
         console.log(mynewarrar);
+
+        //concat
+        let arr = [10,2,6];
+        let numarr = [10,2,6];
+        let mixarray = arr.concat(numarr) // concat Create A New Arrary Always
+        console.log(mixarray)
+
+
+        // Sort method To Sort The Array 
+        let accending = (a,b)=>{
+            return a -b
+        }
+         let descending = (a,b)=>{
+            return b -a
+        }
+        let unsortedarrary = [1,33,4,,12,3,2467,21]
+        let accsortedarrary = unsortedarrary.sort(accending);
+         console.log(accsortedarrary);
+        let decsortedarrary = unsortedarrary.sort(descending);
+        console.log(decsortedarrary);
+
+        //reverse
+        let unreverse = [10,2,3,4,5,563,2,2]
+        unreverse.reverse()
+        console.log(unreverse)
+
+        //splice
+        let indexarray = [1,2,3,4,5,56,7,8]
+        indexarray.splice(1 , 2, 1021,1023,1024);
+        console.log(indexarray);
+
+        // 
+        let myarr = [1,2,3,4,5,56]
+        let myarrslice = myarr.slice(2,3) 
+        console.log(myarrslice);
+
+
+
     </script>
 </body>
 </html>

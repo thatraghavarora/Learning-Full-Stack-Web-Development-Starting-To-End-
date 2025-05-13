@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+
+<body>
+    <script>
+        // Mapping Method
+        let arr = [10, 20, 30, 40]
+        let a = arr.map((index, value, array) => {
+            console.log(index, value, array);
+            return value + 1;
+        })
+        console.log(a)
+
+        // Filter MEthod 
+        let Array2 = [12, 434, 221, 4, 1]
+        let a2 = Array2.filter((a) => {
+            return a <= 100;
+        })
+        // console.log(Array2); ❌ Not Modify The Orginal Arrary
+        console.log(a2);
+
+        // Reduces Method
+
+        let Arrary3 = [1, 2, 3, 4, 5];
+        let a3 = Arrary3.reduce((one, two) => {
+            return one + two;
+        })
+        // function Another Method To Make
+        let a4 = Arrary3.reduce(myfun);
+        function myfun(one, two) {
+            return one + two;
+        }
+
+        console.log(a3);
+        console.log(a4);
+
+
+
+    </script>
+</body>
+
+</html>

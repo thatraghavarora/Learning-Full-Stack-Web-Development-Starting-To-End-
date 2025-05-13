@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array loops</title>
+</head>
+<body>
+    <script>
+        let minearrary = [2,4,6,8,10]
+        // for(let i = 0;i<minearrary.length;i++ ){
+        //     console.log(minearrary[i])
+        // }
+
+        // for Loop for Squring The number
+        // for(let i = 0;i<minearrary.length;i++ ){
+        //     console.log(minearrary[i]*minearrary[i])
+        // }
+        // Printing Square Of array Using Loops
+        // minearrary.forEach((Element)=>{
+        //     console.log(Element*Element)
+        // })
+
+        // Arrary From
+         
+        let name = "Harry"
+        let arr = Array.from(name); // Convect String Into Object (Arrary)
+        console.log(typeof arr)
+
+        for(let i of minearrary){
+            console.log(i)
+        }
+
+        for( let i in minearrary){  
+            console.log(i);
+            console.log(minearrary[i])
+        }
+
+
+    </script>
+</body>
+</html>

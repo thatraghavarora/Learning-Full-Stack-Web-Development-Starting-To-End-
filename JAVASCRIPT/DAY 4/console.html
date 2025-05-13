@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Functions</title>
+</head>
+<body>
+    <script>
+        // Console.clear : To Clear The Console 
+        console.clear();
+
+        console.log(console);
+        // Console.error  : to print error on console
+        console.error("Welcome To Console of Website ")
+
+        // console.assert : to check the wheather The Condition is Right Or Wrong
+        console.assert(1==2); 
+
+        //console.table : To Show The Table of Object
+        let mybook = {
+            "Hindi":65,
+            "English":80,
+            "Computer":92
+        };
+        console.table(mybook);
+        
+        // Console.warn : To Warn Someone in Console
+        console.warn("This Is Warning ");
+
+        // Console.info
+        console.info("You Are Right ! But be Wait For That")
+
+        //console.time
+        console.time("Fortime");
+        for(let i = 0;i<10;i++){
+            console.log(i)
+        }
+        console.timeEnd("Fortime");
+    </script>
+</body>
+</html>
