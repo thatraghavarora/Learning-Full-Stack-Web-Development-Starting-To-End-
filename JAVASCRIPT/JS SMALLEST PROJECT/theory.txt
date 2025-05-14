@@ -1,0 +1,2 @@
+What is Javascript ?
+Ans. Javascript is Brain of Frontent Which is Used To Add Logic In Website .

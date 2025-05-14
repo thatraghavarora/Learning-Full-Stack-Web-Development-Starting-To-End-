@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body>
+    <div>
+        <h1>HEllo</h1>
+        <h1>HEllo 2</h1>
+    </div>
+    <div>
+        <h1>HEllo</h1>
+        <h1>HEllo 2</h1>
+    </div>
+    <div id="myDiv">
+  <p>Hello, <strong>World!</strong></p>
+</div>
+
+    <script>
+        console.log(document.body.firstChild)
+        console.log(document.body.lastChild)
+        console.log(document.body.childNodes)
+        console.log(document.body.parentNode)
+        console.log(document.body.parentElement)
+        console.log(document.body.firstChild.nextSibling)
+
+        function color(){
+            document.body.firstElementChild.style.background = "red";
+        }
+        color();
+let a = document.getElementById("myDiv").innerHTML;
+let b =document.getElementById("myDiv").outerHTML;
+console.log(a,b)
+
+
+
+        
+    </script>
+</body>
+</html>

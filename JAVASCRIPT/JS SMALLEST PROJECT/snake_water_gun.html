@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Water Gun</title>
+</head>
+<body>
+  <script>
+    let playerScore = 0;
+    let computerScore = 0;
+    let rounds = parseInt(prompt("Enter the number of rounds you want to play:"));
+    for (let i = 1; i <= rounds; i++) {
+      let user = prompt("Round " + i + ":\nEnter a number:\n1 - Snake\n2 - Water\n3 - Gun");
+      user = parseInt(user);
+
+      if (![1, 2, 3].includes(user)) {
+        alert("Invalid choice! Please enter 1, 2, or 3.");
+        i--; // redo the round
+        continue;
+      }
+
+      let computer = Math.floor(Math.random() * 3) + 1; // 1 to 3
+
+      // Map numbers to choices
+      let userChoice = user === 1 ? "snake" : user === 2 ? "water" : "gun";
+      let compChoice = computer === 1 ? "snake" : computer === 2 ? "water" : "gun";
+
+      alert("Computer chose: " + compChoice);
+
+      // Determine winner
+      if (userChoice === compChoice) {
+        alert("It's a draw!");
+      } else if (
+        (userChoice === "snake" && compChoice === "water") ||
+        (userChoice === "water" && compChoice === "gun") ||
+        (userChoice === "gun" && compChoice === "snake")
+      ) {
+        alert("You win this round!");
+        playerScore++;
+      } else {
+        alert("Computer wins this round!");
+        computerScore++;
+      }
+    }
+
+    // Final result
+    alert("Game Over!\nYour Score: " + playerScore + "\nComputer Score: " + computerScore);
+
+    if (playerScore > computerScore) {
+      alert("🎉 You won the game!");
+    } else if (computerScore > playerScore) {
+      alert("😔 Computer won the game!");
+    } else {
+      alert("🤝 It's a tie!");
+    }
+  </script>
+</body>
+</html>

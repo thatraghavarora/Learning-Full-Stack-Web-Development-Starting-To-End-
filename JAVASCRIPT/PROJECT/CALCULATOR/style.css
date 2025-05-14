@@ -1,5 +1,94 @@
-input[type="button"]{
-    width: 100%;
-    height: 100%;
-    padding: 5px;
- }
+
+body {
+  background-color: #000000;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container-fluid {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: right;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #e2e6ea;
+}
+
+input[type="button"]:active {
+  background-color: #ccc;
+}
+
+input[type="button"]:focus {
+  outline: none;
+}
+
+input[type="button"]:nth-child(4), input[type="button"]:nth-child(8), input[type="button"]:nth-child(12), input[type="button"]:nth-child(16) {
+  background-color: #007bff;
+  color: white;
+}
+
+input[type="button"]:nth-child(4):hover, input[type="button"]:nth-child(8):hover, input[type="button"]:nth-child(12):hover, input[type="button"]:nth-child(16):hover {
+  background-color: #0056b3;
+}
+
+input[type="button"]:nth-child(4):active, input[type="button"]:nth-child(8):active, input[type="button"]:nth-child(12):active, input[type="button"]:nth-child(16):active {
+  background-color: #004085;
+}
+
+/* Clear button styling */
+input[type="button"]:nth-child(1) {
+  background-color: #dc3545;
+  color: white;
+}
+
+input[type="button"]:nth-child(1):hover {
+  background-color: #c82333;
+}
+
+input[type="button"]:nth-child(1):active {
+  background-color: #bd2130;
+}

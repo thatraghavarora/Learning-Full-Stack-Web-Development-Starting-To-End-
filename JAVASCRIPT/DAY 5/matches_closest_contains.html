@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+  <div class="info">
+    <button class="save">Save</button>
+  </div>
+</div>
+<div id="container">
+  <p id="child">Text</p>
+</div>
+
+<script>
+    
+
+  // Uses To Check Wheather The CSS Class Is Present or Not
+  const btn = document.querySelector("button");
+  console.log(btn.matches(".save")); // true
+  console.log(btn.matches(".delete")); // false
+
+  // Find The Close In CSS of parents
+  const card = btn.closest(".card");
+  console.log(card); 
+
+  //Checks if one element contains another inside it.
+  const parent = document.getElementById("container");
+  const child = document.getElementById("child");
+  console.log(parent.contains(child)); // true
+  console.log(child.contains(parent)); // false
+
+</script>
+
+</body>
+</html>

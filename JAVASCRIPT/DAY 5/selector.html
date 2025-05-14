@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector In JS</title>
+</head>
+<body>
+    <p id="myPara">Hello!</p>
+    <div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="card">Card A</div>
+<div class="card">Card B</div>
+
+
+
+<script>
+    // ID Selector
+  const element = document.getElementById("myPara");
+  element.style.color = "red";
+  // Class Selector
+    const elements2 = document.getElementsByClassName("box");
+  elements2[0].style.backgroundColor = "yellow"; 
+  // TagName Selector
+
+  const allParagraphs = document.getElementsByTagName("p");
+  allParagraphs[1].innerText = "Changed!";
+
+  //querySelector
+  const firstCard = document.querySelector(".card");
+  firstCard.style.border = "2px solid green";
+  //querySelectorAll 
+  const allCards = document.querySelectorAll(".card");
+  allCards.forEach(card => card.style.padding = "10px");
+
+
+
+</script>
+
+</body>
+</html>

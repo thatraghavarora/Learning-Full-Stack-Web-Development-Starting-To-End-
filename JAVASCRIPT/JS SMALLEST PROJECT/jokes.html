@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Joke Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    #joke {
+      font-size: 24px;
+      margin-top: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>😂 Random Joke Generator</h1>
+  <button onclick="showRandomJoke()">Show Me a Joke</button>
+  <p id="joke"></p>
+
+  <script>
+    const jokes = [
+      "Why don’t scientists trust atoms? Because they make up everything!",
+      "Why did the math book look sad? Because it had too many problems.",
+      "Why don’t skeletons fight each other? They don’t have the guts.",
+      "What do you call fake spaghetti? An impasta!",
+      "Why couldn’t the bicycle stand up by itself? It was two-tired.",
+      "Why did the scarecrow win an award? He was outstanding in his field!",
+      "Why do bees have sticky hair? Because they use honeycombs!",
+      "What do you call cheese that isn’t yours? Nacho cheese.",
+      "I would tell you a construction joke, but I’m still working on it.",
+      "Why did the computer go to the doctor? It had a virus!"
+    ];
+
+    function showRandomJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      document.getElementById("joke").innerText = jokes[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
