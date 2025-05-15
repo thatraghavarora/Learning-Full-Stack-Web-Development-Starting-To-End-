@@ -1,94 +1,69 @@
-
 body {
-  background-color: #000000;
-  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
-.container-fluid {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 100%;
-  max-width: 400px;
+.calculater {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Table styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th {
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-td {
-  padding: 10px;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 1.5rem;
-  text-align: right;
-  border: 1px solid #ced4da;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-input[type="button"] {
-  width: 100%;
-  padding: 15px;
-  font-size: 1.2rem;
-  background-color: #f1f1f1;
-  border: 1px solid #ced4da;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-input[type="button"]:hover {
-  background-color: #e2e6ea;
-}
-
-input[type="button"]:active {
-  background-color: #ccc;
-}
-
-input[type="button"]:focus {
+.calculater form input {
+  border: 1px solid #dcdcdc;
   outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  margin: 8px;
+  font-size: 22px;
+
 }
 
-input[type="button"]:nth-child(4), input[type="button"]:nth-child(8), input[type="button"]:nth-child(12), input[type="button"]:nth-child(16) {
-  background-color: #007bff;
-  color: white;
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
-input[type="button"]:nth-child(4):hover, input[type="button"]:nth-child(8):hover, input[type="button"]:nth-child(12):hover, input[type="button"]:nth-child(16):hover {
-  background-color: #0056b3;
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 10px;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #111111;
+}
+input[type="button"]:hover{
+  background-color: #f3a847;
 }
 
-input[type="button"]:nth-child(4):active, input[type="button"]:nth-child(8):active, input[type="button"]:nth-child(12):active, input[type="button"]:nth-child(16):active {
-  background-color: #004085;
+input[type="button"][value="="] {
+  width: 140px;
+  background-color: #febd69;
+  color: #111111;
+  font-weight: bold;
 }
 
-/* Clear button styling */
-input[type="button"]:nth-child(1) {
-  background-color: #dc3545;
-  color: white;
-}
-
-input[type="button"]:nth-child(1):hover {
-  background-color: #c82333;
-}
-
-input[type="button"]:nth-child(1):active {
-  background-color: #bd2130;
+input[type="button"][value="="]:hover {
+  background-color: #f3a847;
 }
