@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Hello</div>
+    <script>
+        // Adding an Element Before the End
+let el = document.getElementById("demo");
+el.insertAdjacentHTML("beforeend", "<p>World</p>");
+// Creating A Paragraph with Content
+let para = document.createElement("p"); 
+para.innerText = "I'm a paragraph";
+// Adding An element 
+let elm = document.getElementById("demo");
+elm.insertAdjacentElement("afterbegin", para);
+elm.insertAdjacentText("beforeend","Jai Shree Ram")
+
+    </script>
+    
+</body>
+</html>

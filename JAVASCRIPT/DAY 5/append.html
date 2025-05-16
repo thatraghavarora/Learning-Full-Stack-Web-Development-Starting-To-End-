@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Insertion Demo</title>
+  <style>
+    #contaniner {
+        padding: 20px;
+        background: #111;
+        color: #0f0;
+        font-family: monospace;
+        border: 2px solid #0f0;
+        margin: 20px;
+    }
+    div {
+        margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<p>outer box</p>
+      <p>Inner</p>
+  <div id="contaniner">
+      Click Here To Read Info
+  </div>
+  <p>Outer</p>
+  <p>outer box</p>
+  <button onclick="my()">Click Me</button>
+
+  <script>
+    function my() {
+        let box = document.getElementById("contaniner");
+
+        // 1. Add inside at the end
+        let div1 = document.createElement("div");
+        div1.innerHTML = "<p>1. Appended inside</p>";
+        box.append(div1);
+
+        // 2. Add inside at the beginning
+        let div2 = document.createElement("div");
+        div2.innerHTML = "<p>2. Prepended inside</p>";
+        box.prepend(div2);
+
+        // 3. Add before the box
+        let div3 = document.createElement("div");
+        div3.innerHTML = "<p>3. Inserted before</p>";
+        box.before(div3);
+
+        // 4. Add after the box
+        let div4 = document.createElement("div");
+        div4.innerHTML = "<p>4. Inserted after</p>";
+        box.after(div4);
+
+        // 5. Replace the box
+        let div5 = document.createElement("div");
+        div5.innerHTML = "<p>5. Replaced the original box</p>";
+        box.replaceWith(div5);
+    }
+  </script>
+</body>
+</html>
