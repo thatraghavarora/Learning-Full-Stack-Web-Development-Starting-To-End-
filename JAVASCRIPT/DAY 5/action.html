@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+
+    <title>Document</title>
+
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Browser event Demo</h1>
+
+    <button id="clickButton">Click me </button>
+
+    <div id="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus inventore deleniti a
+        laudantium assumenda rerum
+
+        eligendi quidem error aspernatur eius?</div>
+
+    <script>
+
+        document.getElementById("clickButton").addEventListener("dblclick", function () {
+
+            alert("You clicked the button");
+
+        })
+
+        document.getElementById("box").addEventListener("mouseover", function () {
+
+            this.style.background = "green";
+            
+
+        })
+
+        document.getElementById("box").addEventListener("mouseout", function () {
+
+            this.style.background = "purple";
+
+        })
+
+    </script>
+
+</body>
+
+</html>
