@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Callback Function with Error Handling</title>
+</head>
+<body>
+  <script>
+    function loadscript(src, onSuccess, onSuccess2, onError) {
+      var script = document.createElement("script");
+     
+      script.src = src;
+
+      // On successful load
+      script.onload = function () {
+        console.log("Script loaded successfully:", src);
+        onSuccess();
+        onSuccess2();
+      };
+
+      // On error
+      script.onerror = function () {
+        console.error(" Failed to load the script:", src);
+          onError(src);
+        
+      };
+
+      document.body.appendChild(script);
+    }
+
+    function hello() {
+      console.log("Good Morning Ji!");
+    }
+
+    function Great() {
+      console.log("You are Great!");
+    }
+
+    function scriptFailed(src) {
+      alert("Oops! The script failed to load: " + src);
+    }
+
+    // Call loadscript with success and error callbacks
+    loadscript(
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js",
+      hello,
+      Great,
+      scriptFailed
+    );
+  </script>
+</body>
+</html>

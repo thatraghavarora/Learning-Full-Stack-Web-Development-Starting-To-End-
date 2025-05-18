@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promiss</title>
+</head>
+<body>
+    <script>
+        let Promise_1 = new Promise((resolve,Rejected)=>{
+            setTimeout(()=>{
+                console.log("Promisse Resolved After 2 Second")
+                resolve(50);
+            },2000)
+        })
+        Promise_1.then((value)=>{
+            console.log(value);
+            let Promise_2 = new Promise((resolve,Rejected)=>{
+                 setTimeout(()=>{
+                resolve("Promise 2 ")
+               
+            },2000)
+               
+            })
+            return Promise_2
+        }).then((value)=>{
+            console.log("We Are Done")
+        })
+    </script>
+</body>
+</html>

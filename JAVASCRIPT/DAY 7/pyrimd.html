@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        loadScript("file1.js", function () {
+            console.log("File 1 loaded!");
+            loadScript("file2.js", function () {
+                console.log("File 2 loaded!");
+                loadScript("file3.js", function () {
+                    console.log("File 3 loaded!");
+                    loadScript("file4.js", function () {
+                        console.log("File 4 loaded!");
+                        loadScript("file1.js", function () {
+                            console.log("File 5 loaded!");
+                            loadScript("file1.js", function () {
+                                console.log("File 6 loaded!");
+                                loadScript("file1.js", function () {
+                                    console.log("File 7 loaded!");
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+
+
+// Problems With This:
+// 🧠 It's hard to understand what's going on.
+
+// 🐞 If there's an error in file2.js or file3.js, it's tough to fix.
+
+// 😓 Adding or changing anything means editing inside a nested level.
+    </script>
+</body>
+
+</html>

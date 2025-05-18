@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promiss</title>
+</head>
+
+<body>
+    <script>
+        let order_check = new Promise((resolve, reject) => {
+            console.log("Place Food SuccessFull");
+            setTimeout(() => {
+                console.log("Your Food Order is Confirm ! ")
+                resolve(true)
+                // reject(new Error("I Am The Error "))
+            }, 5000)
+             });
+            console.log("Kindly Wait For few Second For Order Confirm")
+            let Delivery = new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+                    //resolve(true)
+                    reject(new Error("Ops ! Delivery Boy Can't find "))
+                }, 10000)
+           
+        });
+
+
+        //     setTimeout(()=>{
+
+        //         console.log("You Food has Cooked It Was Start Packing ")
+        //         //resolve(true)
+        //         // reject(new Error("I Am The Error "))
+        //     },15000)
+        //      setTimeout(()=>{
+
+        //     console.log("Your Food has Assign For Delivery")
+        //         //resolve(true)
+        //         // reject(new Error("I Am The Error "))
+        //     },16000)
+        //      setTimeout(()=>{
+
+        //     console.log("You Food Has Delivery Successfully")
+        //         //resolve(true)
+        //         // reject(new Error("I Am The Error "))
+        //     },20000)
+
+
+        order_check.then((value) => {
+            console.log(value)
+        })
+        Delivery.catch((Error)=>{
+            console.log("Some Error Occur In Delivery System")
+        })
+
+
+    </script>
+</body>
+
+</html>
