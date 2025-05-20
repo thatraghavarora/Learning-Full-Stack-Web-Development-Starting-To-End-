@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies </title>
+</head>
+<body>
+    <script>
+    let key = prompt("Enter the Key");
+    let Value = prompt("Enter the Value");
+    localStorage.setItem(key,Value)
+    console.log(`The Key is ${key} And The Value is ${Value}`);
+    if (key == "Test"){
+        localStorage.removeItem(key)
+    }
+    else if (key == "delete"){
+        console.log("Delete Cookies is Detected You Coookies is Delete")
+        localStorage.clear(key)
+    }
+    console.log(localStorage.length)
+    console.log(localStorage.key(1))
+    
+
+    </script>
+</body>
+</html>

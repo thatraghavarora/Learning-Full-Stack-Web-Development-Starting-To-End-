@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SessionStorage with User Input</title>
+</head>
+<body>
+
+  <h2>Enter Your Name</h2>
+
+  <input type="text" id="nameInput" placeholder="Enter your name" />
+  <button onclick="saveName()">Save</button>
+  <button onclick="showName()">Show</button>
+  <button onclick="clearName()">Clear</button>
+
+  <p id="output"></p>
+
+  <script>
+    // Save user input to sessionStorage
+    function saveName() {
+      const name = document.getElementById("nameInput").value;
+      if (name.trim() !== "") {
+        sessionStorage.setItem("Name", name);
+        document.getElementById("output").innerText = `Name "${name}" saved successfully!`;
+      } else {
+        document.getElementById("output").innerText = "Please enter a valid name.";
+      }
+    }
+
+    // Retrieve and show the stored name
+    function showName() {
+      const name = sessionStorage.getItem("Name");
+      if (name) {
+        document.getElementById("output").innerText = `Stored Name: ${name}`;
+      } else {
+        document.getElementById("output").innerText = "No name found in sessionStorage.";
+      }
+    }
+
+    // Clear the name from sessionStorage
+    function clearName() {
+      sessionStorage.removeItem("Name");
+      document.getElementById("output").innerText = "Name cleared from sessionStorage.";
+    }
+  </script>
+
+</body>
+</html>
