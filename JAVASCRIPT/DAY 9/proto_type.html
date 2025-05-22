@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proto Types In JS</title>
+</head>
+
+<body>
+    <script>
+        // Define a prototype (like a blueprint)
+        function Car(make, model) {
+            this.make = make;
+            this.model = model;
+        }
+
+        // Add a method to the prototype
+        Car.prototype.drive = function () {
+            console.log(`${this.make} ${this.model} is driving.`);
+        };
+
+        Car.prototype.stop = function () {
+            console.log(`${this.make} ${this.model} has stopped.`);
+        };
+
+        // Create new objects (instances) using the prototype
+        const car1 = new Car("Toyota", "Corolla");
+        const car2 = new Car("Honda", "Civic");
+
+        // Each car has access to the same shared methods
+        car1.drive(); // Toyota Corolla is driving.
+        car2.drive(); // Honda Civic is driving.
+
+        console.log(car1); // You won't see drive() directly, but it's inherited from the prototype
+
+    </script>
+</body>
+
+</html>

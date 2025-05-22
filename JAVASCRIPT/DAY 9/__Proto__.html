@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proto </title>
+</head>
+
+<body>
+    <script>
+        const animal = {
+            eats: true,
+            walk() {
+                console.log("Animal walks");
+            }
+        };
+
+        const dog = {
+            bark() {
+                console.log("Woof!");
+            }
+        };
+
+        // Set animal as the prototype of dog
+        dog.__proto__ = animal;
+
+        console.log(dog.eats); // true (inherited from animal)
+        dog.walk();            // Animal walks (inherited from animal)
+        dog.bark();            // Woof! (own method)
+
+    </script>
+</body>
+
+</html>
