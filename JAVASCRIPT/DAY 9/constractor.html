@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+        // Define the RailwayForm class
+class RailwayForm {
+  constructor(passengerName, trainNumber, destination) {
+    this.passengerName = passengerName;
+    this.trainNumber = trainNumber;
+    this.destination = destination;
+    
+  }
+
+ 
+  submit() {
+    console.log(`Booking confirmed for ${this.passengerName}`);
+    console.log(`Train Number: ${this.trainNumber}`);
+    console.log(`Destination: ${this.destination}`);
+    console.log("✅ Your form has been submitted.\n");
+  }
+
+  cancel() {
+    console.log(`❌ Booking cancelled for ${this.passengerName}.\n`);
+  }
+}
+
+// Creating objects (forms) for different passengers
+const form1 = new RailwayForm("Raghav Arora", 12345, "Delhi");
+const form2 = new RailwayForm("Anjali Sharma", 67890, "Mumbai");
+
+// Submit the forms
+form1.submit();
+form2.submit();
+
+// Cancel one form
+form1.cancel();
+ 
+    </script>
+</body>
+</html>

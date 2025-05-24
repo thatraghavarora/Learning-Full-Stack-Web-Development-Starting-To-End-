@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Extend - Monkey Example</title>
+</head>
+<body>
+
+  <script>
+    // Parent Class
+    class Animal {
+      constructor(name) {
+        this.name = name;
+      }
+      eat() {
+        console.log(`${this.name} eats.`);
+      }
+      speak() {
+        console.log(`${this.name} says: silence.`);
+      }
+      sleep() {
+        console.log(`${this.name} is sleeping.`);
+      }
+      run() {
+        console.log(`${this.name} is running.`);
+      }
+    }
+
+    // Child Class extending Animal
+    class Monkey extends Animal {
+      climb() {
+        console.log(`${this.name} climbs a tree.`);
+      }
+      speak() {
+        console.log(`${this.name} says: Ow.`); // Overriding the speak() method
+      }
+    }
+
+    // Creating an instance of Monkey
+    let monkey = new Monkey("Chimpu"); // Give the monkey a more monkey-like name
+    console.log(monkey.name);  // Output: Chimpu
+
+    // Call methods
+    monkey.eat();     // Output: Chimpu eats.
+    monkey.speak();   // Output: Chimpu says: Ow.
+    monkey.sleep();   // Output: Chimpu is sleeping.
+    monkey.run();     // Output: Chimpu is running.
+    monkey.climb();   // Output: Chimpu climbs a tree.
+  </script>
+
+</body>
+</html>

@@ -34,14 +34,14 @@
         console.log(student3.name); // Charlie
         student3.study();           // Charlie is studying in grade 11.
         class HighSchoolStudent extends Student {
-  joinClub(clubName) {
-    console.log(`${this.name} joined the ${clubName} club.`);
-  }
-}
+            joinClub(clubName) {
+                console.log(`${this.name} joined the ${clubName} club.`);
+            }
+        }
 
-const john = new HighSchoolStudent("John", 11);
-john.study();             // John is studying in grade 11.
-john.joinClub("Math");    // John joined the Math club.
+        const john = new HighSchoolStudent("John", 11);
+        john.study();             // John is studying in grade 11.
+        john.joinClub("Math");    // John joined the Math club.
 
 
 
