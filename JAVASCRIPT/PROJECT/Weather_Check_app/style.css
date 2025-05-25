@@ -2,8 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, sans-serif;
     font-size: 16px;
     border: none;
@@ -12,20 +10,19 @@
 
 body{
     display: flex;
-    height: 100vh;
     width: 100%;
-    background: url('https://picsum.photos/1920/1080/?random}'), no-repeat center center/cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url('https://picsum.photos/1920/1080/?random}'), no-repeat center center/cover;
 }
-.container {
+#container {
     display: flex;
     margin: 0 auto;
     padding: 10px;
-    width: 30%;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
@@ -42,10 +39,12 @@ body{
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    width: 85%;
+    width: 80%;
     background: #20010132;
+    outline: none;
     border: none;
     color: white;
+    border: 1px solid white;
 }
 
 
@@ -54,4 +53,15 @@ body{
     background-color: black;
     padding: 10px;
     color: white;
+    margin: 0px;
+    border: 1px solid white;
+}
+#weatherContainer{
+    color:white;
+    margin: 10px;
+    
+}
+#weatherIcon img {
+  width: 100px;
+  height: 100px;
 }
