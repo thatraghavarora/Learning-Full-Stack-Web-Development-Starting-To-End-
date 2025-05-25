@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread </title>
+</head>
+<body>
+    <script>
+        let arr1 = [1,2,4,5]
+        let arr2 = [3,6,7,8]
+        let mergedArr = [...arr1,...arr2]
+        // console.log(mergedArr)
+        // spread operator can be used to merge two arrays, or to copy an array to a new one
+        function sum(v1,v2,v3,v4){
+            return v1 + v2 + v3 +v4
+
+        }
+        let sumResult = sum(...mergedArr)
+        console.log(sumResult)
+        
+        let obj2 = {
+            name: "John",
+            age: 30
+        }
+        let obj3 = {...obj2, name: "John Sir"} // ✔️✔️ 
+        console.log(obj3) 
+
+         let obj4 = { name: "Aditiya",...obj2} //❌❌ Overright 
+        console.log(obj4) 
+
+
+        
+    </script>
+</body>
+</html>

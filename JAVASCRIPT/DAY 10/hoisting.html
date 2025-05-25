@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting </title>
+</head>
+<body>
+    <script>
+        // Hoisting example
+        console.log(myVar); // undefined
+        var myVar = 10;
+
+        // Hoisting example with function
+        console.log(myFunction()); // 10
+        function myFunction() {
+            return 10;
+        }
+        // Hoisting example with let and const
+        console.log(myLetVar); // ReferenceError: myLetVar is not defined
+        let myLetVar = 10;
+        // Hoisting example with const
+        console.log(myConstVar); // ReferenceError: myConstVar is not defined
+        const myConstVar = 10;
+        // Hoisting example with arrow function
+        console.log(myArrowFunction()); // 10
+        const myArrowFunction = () => {
+            return 10;
+        }
+        // Hoisting example with class
+        console.log(new MyClass().myProperty); // Error
+
+        class MyClass {
+            constructor() {
+                this.myProperty = 10;
+            }
+        }
+        // Hoisting example with template literals
+        console.log(`My variable is ${myTemplateVar}`); // My variable is undefined
+        let myTemplateVar = "Hello";
+        // Hoisting example with async/await
+        async function myAsyncFunction() {
+            console.log(await myPromise()); // 10
+        }
+        async function myPromise() {
+            return 10;
+        }
+        myAsyncFunction();
+       
+    </script>
+</body>
+</html>
