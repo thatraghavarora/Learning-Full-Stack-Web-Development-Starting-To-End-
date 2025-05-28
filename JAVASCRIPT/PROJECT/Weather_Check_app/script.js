@@ -54,7 +54,7 @@ function getweather() {
 
 
 function displayWeather(data) {
-  document.getElementById('cityName').innerText = "Weather of " + data.name;
+  document.getElementById('cityName').innerText = "Weather of " +  data.name;
   document.getElementById('temperature').innerText = "Temperature: " + data.main.temp + "°C";
   document.getElementById('humidity').innerText = "Humidity: " + data.main.humidity + "%";
   document.getElementById('windSpeed').innerText = "Wind Speed: " + data.wind.speed + " m/s";
