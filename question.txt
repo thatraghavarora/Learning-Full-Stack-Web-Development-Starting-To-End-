@@ -1,0 +1,12 @@
+
+// Js Interview Question 
+1. What is coercion (IN JS)?
+
+2. What is The Output of The Code
+   console.log("1"-1); 
+   setTimeout(function() {console.log(0)}, 10);
+   console.log(22) 
+   setTimeout(function() {console.log(91)}, 9);
+   setTimeout(function() {console.log(23)}, 10);
+
+3. What is The Hoisting  in Js ? and Process ?
