@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  <h2>Enter something:</h2>
+  <h2>HTML INJECTION</h2>
   <input type="text" id="userInput" placeholder="Type here...">
   <button onclick="displayInput()">Show on Screen</button>
 
@@ -14,7 +14,7 @@
   <script>
     function displayInput() {
       const input = document.getElementById("userInput").value;
-      document.getElementById("output").innerHTML = input;
+      document.getElementById("output").innerText = input;
     }
   </script>
 
