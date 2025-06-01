@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+
+        // Single Level Inheritance
+        class Mobile{
+            constructor(brand){
+                this.mobilebrand = brand;
+            }
+            print(){
+                console.log(`I Have This ${mobilebrand} Phone `)
+            }
+        }
+        class Model extends Mobile {
+            constructor(brand,model){
+                super(brand);
+                this.model = model;
+            }
+            show(){
+                this.print();
+                console.log(`Model is ${this.model}`);
+            }
+        }
+
+        // Hieararchical Inheritance
+        class Animal{
+            info(){
+                console.log("I am an Animal")
+            }
+        }
+        class Dog extends Animal{
+            bark(){
+                console.log("I am A Dog , wooof wooof")
+            }
+
+        }
+        class cow extends Animal{
+            Moo(){
+                console.log("Iam Cow. Moooo Moooo! ")
+            }
+        }    
+        let dog1 = new Dog();
+        dog1.info();
+        dog1.bark();
+        let Cow1 = new cow();
+        Cow1.Moo()
+
+         class Dog {
+            constructor(color, speed) {
+                this.color = color;
+                this.speed = speed;
+            }
+            
+        }
+        console.log(Dog)
+
+        class Husky extends Dog {
+            constructor(color, speed, owner) {
+                super(color, speed);
+                this.owner = owner;
+            }
+
+            showInfo() {
+                console.log("Color: " + this.color + ", Owner: " + this.owner + ", Speed: " + this.speed);
+            }
+        }
+
+        // Create a Husky instance
+        let myHusky = new Husky("white", 30, "ABC");
+
+        myHusky.showInfo(); // Color: white, Owner: ABC, Speed: 30
+
+        console.log(myHusky.owner + " is the owner of the " + myHusky.color + " Husky.");
+
+    </script>
+</body>
+</html>

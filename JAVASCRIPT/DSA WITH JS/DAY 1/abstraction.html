@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Demo{
+            adding(a,b){
+                this.x  = a;
+                this.y = b;
+                this.z = this.x + this.y;
+
+            }
+            print(){
+                console.log("Addition is ",this.z);
+            }
+        }
+        const add = new Demo();
+        add.adding(10,20);
+        const add1 = new Demo();
+        add1.adding(1,2)
+        add.print()
+        add1.print()
+    </script>
+
+</body>
+</html>

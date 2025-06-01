@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Method Overridding
+        class Animal {
+            print() { 
+                console.log("I am Animal"); 
+            }
+        }
+
+        class Dog extends Animal {
+            print() {
+                console.log("I am Dog");
+            }
+        }
+
+        let obj = new Dog()
+        obj.print()
+
+        // Method Overloading
+
+        let sum = (x,y)=>{
+            if (typeof x === "object"){
+                return x.x + x.y;
+            }
+            else{
+                return x + y;
+            }
+        };
+
+        console.log(`Sum of Number`, + sum(10,20));
+        console.log(`Sum of Number`, + sum({x:10, y:20}));
+
+        // Access Specifies Public 
+
+        // class increasecount{
+        //     value =0;
+        //     increase(){
+        //         return ++this.value;
+        //     }
+        // }
+        // const counter = new increasecount();
+        // console.log(counter.increase())
+
+
+        // Private Specifies 
+
+        //   class increasecount{
+        //     #value =0;
+        //     #increase(){
+        //         return ++this.value;
+        //     }
+        // }
+        // const counter = new increasecount();
+        // console.log(counter.#increase())
+
+
+
+    </script>
+</body>
+
+</html>
