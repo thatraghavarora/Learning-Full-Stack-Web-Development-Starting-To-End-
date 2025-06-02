@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort </title>
+</head>
+<body>
+    <script>
+        let myarr = [12,3,4,56,43,54,53]
+        let length = myarr.length;
+        let count = 0;
+        function sortingmyarr(myarr , length) {
+        for(let i = 0;i<length-1;i++){
+            for(let j =0;j<length-1; j++){
+            if(myarr[j] > myarr[j+1]){
+                [myarr[j],myarr[j+1]] = [myarr[j+1],myarr[j]]
+            }
+            }
+        }
+    }
+    console.log(`Before Arrar is ${myarr}`)
+    sortingmyarr(myarr , length)
+    console.log(`After Arrar is ${myarr}`)
+    </script>
+</body>
+</html>

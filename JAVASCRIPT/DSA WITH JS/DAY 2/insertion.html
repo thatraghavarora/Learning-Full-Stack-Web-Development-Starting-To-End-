@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort</title>
+</head>
+<body>
+    <script>
+        var arr = [6,7,5,3,2,1]
+        mylength = arr.length
+        function insertionSort(arr , mylength){
+            for(let i = 1;i<mylength;i++){
+                let temp = arr[i];
+                for(var j = i -1; j >= 0 && arr[j]>temp;j--){
+                    arr[j+1] = arr[j];
+                }
+                arr[j+1] = temp;
+            }
+        }
+        console.log("Before Sorting ", arr)
+        insertionSort(arr,mylength)
+        console.log("After Sorting ", arr)
+    </script>
+</body>
+</html>

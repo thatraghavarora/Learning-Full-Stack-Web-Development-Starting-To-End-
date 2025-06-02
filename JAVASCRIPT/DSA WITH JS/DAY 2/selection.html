@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort </title>
+</head>
+<body>
+    <script>
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        // Assume the minimum is the first element of unsorted part
+        let minIndex = i;
+       
+        // Find the index of the minimum element in the remaining unsorted array
+        for (let j = i + 1; j < n; j++) {
+            if (arr[minIndex] > arr[j]  ) {
+                minIndex = j;
+                
+            }
+        }
+
+        // Swap the found minimum element with the first element of unsorted part
+        if (minIndex !== i) {
+            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+        }
+    }
+}
+
+// Example usage
+let arr = [6, 2, 5, 3, 9];
+
+console.log("Before sorting:", arr.join(", "));
+selectionSort(arr);
+console.log("After sorting:", arr.join(", "));
+
+    </script>
+</body>
+</html>
