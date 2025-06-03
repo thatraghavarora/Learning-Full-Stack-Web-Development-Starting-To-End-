@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let arr = [79, 33, 12, 98, 45]
+        n = arr.length - 1;
+
+        function selection_sort(arr, n) {
+            for (let i = 0; i <= n; i++) {
+                for (let j = i + 1; j <= n; j++) {
+                    if (arr[i] > arr[j]) {
+                        let temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+        }
+        let arr1 = [...arr];
+        selection_sort(arr1, n)
+        console.log("Original:", arr);
+        console.log("Sorted: ", arr1);
+        console.log("Min: ", arr1[0]);
+        console.log("Max: ", arr1[n]);
+
+    </script>
+</body>
+
+</html>

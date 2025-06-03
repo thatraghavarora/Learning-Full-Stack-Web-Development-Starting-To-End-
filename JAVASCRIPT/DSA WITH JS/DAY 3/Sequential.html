@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequestial Search</title>
+</head>
+
+<body>
+    <script>
+        // Ask user to input numbers separated by commas
+        let input = prompt("Enter array elements separated by commas (12,54,65,63,46,5):");
+
+        // Convert input string to an array of numbers
+        let arr = input.split(',').map(Number);
+       
+       
+
+        let lengtharr = arr.length
+        let item = prompt("Enter The Value To Find In Arr")
+        function linearSearch(arr, lengtharr, item) {
+            for (let i = 0; i < lengtharr; i++) {
+                if (arr[i] == item) {
+                    console.log("The Value Was Found In Arrar At Index", i);
+                }
+            }
+        }
+        linearSearch(arr, lengtharr, item);
+    </script>
+</body>
+
+</html>

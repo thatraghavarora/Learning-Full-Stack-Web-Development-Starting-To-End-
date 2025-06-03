@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequestial Search Max and Min </title>
+</head>
+<body>
+    <script>
+        let arr = [163,112,93,213,98]
+        let length = arr.length
+        let min = arr[0];
+        let max = arr[0];
+        for(let i = 1; i < length;i++){
+            if(arr[i]<min){
+                min = arr[i];
+            }
+            else if(arr[i]>max){
+                max = arr[i]
+            }
+        }
+        
+        console.log(`Array is ${arr}`)
+        console.log(`Min Value In Array is ${min}`)
+        console.log(`Max Value In Array is ${max}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binnary</title>
+</head>
+
+<body>
+    <script>
+        let arr = [2, 3, 4, 10, 3, 2, 7, 8, 9, 10];
+        let length = arr.length ;
+        let search = 10;
+
+        function counting(arr) {
+            let count = 0;
+            for (let i = 0; i < length; i++) {
+                if (arr[i] == search) {
+                    count = count + 1;
+                }
+            }
+            return count
+        }
+        let result = counting(arr);
+
+        console.log(`Given Array : ${arr}`);
+        if (result == 0) {
+            console.log("Element Not Found");
+        } else {
+            console.log(`Count At ${search} : ${result}`);
+        }
+    </script>
+</body>
+
+</html>
