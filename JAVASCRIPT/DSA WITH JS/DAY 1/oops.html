@@ -81,6 +81,21 @@
         // Output:
         // Drawing circle
         // Drawing square
+        console.info("Abstraction")
+        class Car {
+            startEngine() {
+                this.#injectFuel();
+                console.log("Engine started");
+            }
+
+            #injectFuel() {
+                console.log("Fuel inject ho raha hai...");
+            }
+        }
+
+        const car = new Car();
+        car.startEngine();
+        // car.#injectFuel(); ❌ Error: private method
 
     </script>
 </body>
