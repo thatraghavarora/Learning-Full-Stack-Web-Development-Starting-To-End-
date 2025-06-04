@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS IN JS </title>
+</head>
+
+<body>
+    <script>
+        // JS HAVE 4 MAJAOR PILLAR
+        // 1. Encapsulation
+        // 2. Inheritance
+        // 3. Polymorphism
+        // 4. Abstraction
+
+        // Encapsulation
+        console.info("Encapsulation")
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                let _age = age; // private variable (closure ke zariye)
+
+                this.getAge = () => _age;
+                this.setAge = (newAge) => {
+                    if (newAge > 0) _age = newAge;
+                };
+            }
+        }
+
+        const p = new Person("Raghav", 25);
+        console.log(p.name);      // Raghav
+        console.log(p.getAge());  // 25
+        p.setAge(30);
+        console.log(p.getAge());  // 30
+
+        // 2. Inheritance 
+        console.info("Inheritance")
+        class Animal {
+            speak() {
+                console.log("Animal speaks");
+            }
+        }
+
+        class Dog extends Animal {
+            speak() {
+                super.speak(); // parent class ka method call
+                console.log("Dog barks");
+            }
+        }
+
+        const d = new Dog();
+        d.speak();
+        // Output:
+        // Animal speaks
+        // Dog barks
+
+        // 3 Polymorphism
+        console.info("Polymorphism")
+        class Shape {
+            draw() {
+                console.log("Drawing shape");
+            }
+        }
+
+        class Circle extends Shape {
+            draw() {
+                console.log("Drawing circle");
+            }
+        }
+
+        class Square extends Shape {
+            draw() {
+                console.log("Drawing square");
+            }
+        }
+
+        const shapes = [new Circle(), new Square()];
+        shapes.forEach(s => s.draw());
+        // Output:
+        // Drawing circle
+        // Drawing square
+
+    </script>
+</body>
+
+</html>
