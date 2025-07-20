@@ -1,0 +1,311 @@
+/* Blue Color#192f60 */
+
+.top-header {
+  width: 100%;
+  padding: 15px;
+  background-color: #192f60;
+
+}
+
+.top-header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+
+}
+
+.my-top-text {
+  display: flex;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+
+
+}
+
+.dropdown-number {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.brand-logo {
+  height: 40px;
+}
+
+.search-box {
+  background-color: #f5f6f8;
+  border-radius: 25px;
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+}
+
+.btn-outline-customs {
+  border: 1px solid #0056d2;
+  color: #0056d2;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.btn-outline-customs:hover {
+  background-color: #0056d2;
+  color: white;
+}
+
+.dropdown-toggle::after {
+  margin-left: 5px;
+}
+
+.outer-drop {
+  color: #0056d2;
+  border: 1px solid #0056d2;
+  margin-left: 20px;
+  border-radius: 5px;
+
+}
+
+.outer-drop:hover {
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  background-color: #0056d2;
+
+}
+
+.nav-link:hover {
+  background-color: #f0f6ff;
+  padding: 2px;
+}
+.head-btn{
+border: 1px solid #0056d2;
+  color: #0056d2;
+  font-size: 15px;
+}
+  .course-nav {
+      background: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .course-link {
+      color: #444;
+      text-decoration: none;
+      font-size: 15px;
+      margin-right: 30px;
+    }
+    .course-link:hover {
+      color: #000;
+    }
+    .browse-title {
+      font-weight: normal;
+      margin-bottom: 0;
+      font-size: 13px;
+      color: #333;
+    }
+    .browse-button {
+      font-weight: bold;
+      font-size: 15px;
+      background: none;
+      border: none;
+      color: #000;
+    }
+    .hamburger-icon {
+      font-size: 20px;
+      color: #555;
+      cursor: pointer;
+    }
+     .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+   /* Carousel height fix */
+    #bannerCarousel img {
+      height: 420px;
+      object-fit: cover;
+    }
+
+    /* Cards overlapping the banner */
+    .career-wrapper {
+      margin-top: -70px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .career-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      padding: 20px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+      height: 120px;
+    }
+
+    .career-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0,0,0,0.25);
+    }
+
+    .career-title {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .career-role {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .know-more {
+      color: #0056b3;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .know-more:hover {
+      text-decoration: underline;
+    }
+    
+    .tabs {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .tabs .nav-link {
+      color: #333;
+      font-weight: 500;
+    }
+
+    .tabs .nav-link.active {
+      border-bottom: 2px solid #0d6efd;
+      color: #0d6efd;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .course-img {
+      height: 140px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .course-body {
+      padding: 15px;
+    }
+
+    .course-body h6 {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .course-body h5 {
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 5px;
+      color: #000;
+    }
+
+    .ratings i {
+      color: #f7b500;
+    }
+
+    .card-slider {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .card-slider::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .card-slider::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 5px;
+    }
+
+    .card-slider .course-card {
+      flex: 0 0 280px;
+      scroll-snap-align: start;
+    }
+
+    .badge-top {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #fff;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: bold;
+      color: #ff4d4d;
+    }
+
+    .view-btn {
+      border: 1px solid #0d6efd;
+      background-color: #fff;
+      color: #0d6efd;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .view-btn:hover {
+      background-color: #0d6efd;
+      color: #fff;
+    }

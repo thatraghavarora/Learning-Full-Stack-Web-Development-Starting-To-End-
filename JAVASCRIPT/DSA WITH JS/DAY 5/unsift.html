@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unshift</title>
+</head>
+<body>
+    <script>
+        const fruite = ["Mango","Apple","Kiwi","Orange"]
+        function unshift(arr, elements){
+            for(var i = arr.length;i>=0;i--){
+                arr[i] = arr[i-1]
+                if(i==0){
+                    arr[i] = elements
+                    console.log("Adding Successfull")
+                }
+            }
+        }
+        console.log(fruite)
+        unshift(fruite , "Bananana")
+        console.log(fruite)
+        
+    </script>
+</body>
+</html>

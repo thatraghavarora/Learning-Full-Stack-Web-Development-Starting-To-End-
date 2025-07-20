@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maping </title>
+</head>
+
+<body>
+    <script>
+        const fruits = new Map();
+
+        // Adding key-value pairs
+        fruits.set("Mango", 20);
+        fruits.set("Guava", 40);
+        fruits.set("Kiwi", 60);
+        fruits.set("Pomegranate", 80);
+
+        // Accessing a value
+        console.log(`Value of Kiwi is ${fruits.get("Kiwi")}`);
+
+        // Viewing all keys
+        console.log("Keys of fruits are:");
+        console.log([...fruits.keys()]);
+
+        // Viewing all values
+        console.log("Values of fruits are:");
+        console.log([...fruits.values()]);
+
+        // Checking if a key exists
+        console.log(`Fruit has Apples: ${fruits.has("Apples")}`);
+
+        // Viewing all entries (key-value pairs)
+        console.log("Entries before deleting Guava:");
+        console.log([...fruits.entries()]);
+
+        // Deleting a key-value pair
+        console.log(`Deleting Guava from fruits: ${fruits.delete("Guava")}`);
+
+        // Viewing entries after deletion
+        console.log("Entries after deleting Guava:");
+        console.log([...fruits.entries()]);
+
+        // Clearing the map
+        console.log(`Removing all elements from fruits: ${fruits.clear()}`);
+
+        // Final map
+        console.log(fruits);
+
+    </script>
+</body>
+
+</html>

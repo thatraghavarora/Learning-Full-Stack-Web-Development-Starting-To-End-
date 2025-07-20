@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search </title>
+</head>
+
+<body>
+    <script>
+        var arr = [12, 23, 45, 74];
+
+        class Stack {
+            constructor(arr) {
+                this.arr = arr;
+                this.top = arr.length - 1;
+            }
+
+            search(value) {
+                for (let i = 0; i < this.arr.length; i++) {
+                    if (this.arr[i] === value) {
+                        return `Value ${value} found at index ${i}`;
+                    }
+                }
+                return `Value ${value} not found in the stack.`;
+            }
+        }
+
+        // Pass the array into the Stack constructor
+        var searching = new Stack(arr);
+
+        // Call the search method
+        console.log(searching.search(12));
+
+    </script>
+</body>
+
+</html>

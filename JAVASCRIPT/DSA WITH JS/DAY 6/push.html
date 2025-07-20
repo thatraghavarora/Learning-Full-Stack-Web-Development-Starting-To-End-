@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push</title>
+</head>
+<body>
+    <script>
+        class Stack{
+            constructor(size){
+                
+                this.size = size
+                this.arr = []
+                this.top = 0
+            }
+            push(elements){
+                if(this.top >= this.size){
+                 return console.log("Stack Overflow")   
+                }
+                this.arr[this.top] = elements
+                this.top = this.top += 1
+                return this.arr
+            }
+        }
+        var s1 = new Stack(6)
+        for(let i =0; i<=6; i++){
+            x = Math.floor((Math.random()*10)+1)
+           console.log(s1.push(x))
+        }
+    </script>
+</body>
+</html>

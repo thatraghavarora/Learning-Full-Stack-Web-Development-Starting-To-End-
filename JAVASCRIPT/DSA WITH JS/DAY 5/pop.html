@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Elements</title>
+</head>
+
+<body>
+    <script>
+        const fruite = ["Apple", "Mango", "Kiwi", "Orange"]
+        function pop(arr) {
+            let NewArr = [];
+            for (let i = 0; i < arr.length - 1; i++) {
+                NewArr[i] = arr[i];
+            }
+            return NewArr;
+        }
+        const newFruite = pop(fruite);
+        console.log(newFruite);
+    </script>
+</body>
+
+</html>

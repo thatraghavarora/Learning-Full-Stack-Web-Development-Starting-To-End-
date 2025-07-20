@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map </title>
+</head>
+<body>
+    <script>
+        const fruite = ["Apple", "Mango","Bananana", "Kiwi"]
+        function map(array, callback){
+            let returnValue = [];
+            for(let i = 0; i <array.length;i++){
+               var myvalue = callback(array[i], i, array);
+                returnValue.push(myvalue);
+            }
+            return returnValue;
+        }
+      
+        var values = map(fruite , (item , index)=>{
+            return item
+        })
+        console.log(values)
+    </script>
+</body>
+</html>

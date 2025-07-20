@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsEmpty</title>
+</head>
+<body>
+    <script>
+        var arr = []
+        class Stack {
+            constructor(arr){
+                this.arr = arr
+                this.top = this.arr.length - 1
+            }
+            isempty(){
+                if(this.top == -1){
+                    return "Stack UnderFlow"
+                }
+                return "You Can Remove The Elements"
+            }
+    
+        }
+        var s1 = new Stack(arr)
+        console.log(s1.isempty())
+        console.log(s1.isempty())
+        console.log(s1.isempty())
+    </script>
+</body>
+</html>

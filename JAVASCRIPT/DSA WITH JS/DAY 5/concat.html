@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concat</title>
+</head>
+<body>
+    <script>
+        var string1 = "Welcome To"
+        var string2 = " Javascript"
+        var string3 = " With DSA"
+        function concat(...strings){
+            var sum = "";
+            for(string of strings){
+                sum += string;
+            }
+            return sum;
+        }
+        var string4 = concat(string1 , string2, string3);
+        console.log(string4);
+        
+        
+    </script>
+</body>
+</html>

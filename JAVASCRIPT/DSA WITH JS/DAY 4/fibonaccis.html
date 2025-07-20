@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabonaccis</title>
+</head>
+<body>
+    <script>
+        function Fabonaccis(num){ //7
+            if(num<2){
+                return num;
+            }
+            else{
+                return Fabonaccis(num -1)+Fabonaccis(num -2) 
+            }
+
+        }
+        
+        console.log(Fabonaccis(7))
+    </script>
+</body>
+</html>

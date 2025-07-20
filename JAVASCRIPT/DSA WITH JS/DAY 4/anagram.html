@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram </title>
+</head>
+<body>
+    <script>
+        var string1 = "evil"
+        var string2 = "vile"
+        if(string1.length !== string2.length){
+            console.log("It Was Not The anagram")
+        }
+        let str1 = string1.split('').sort().join('');
+        let str2 = string2.split('').sort().join('');
+        if(str1 === str2){
+            console.log("They Are Anagrams")
+        }
+        else{
+            console.log("They Are Not Anagrams")
+        }
+
+    </script>
+</body>
+</html>

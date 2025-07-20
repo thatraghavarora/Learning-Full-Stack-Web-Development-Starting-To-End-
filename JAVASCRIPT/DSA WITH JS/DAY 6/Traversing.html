@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Traversal</title>
+</head>
+
+<body>
+    <script>
+        class Queue {
+            constructor() {
+                this.count = 0;
+                this.items = {};
+            }
+
+            enqueue(element) {
+                this.items[this.count] = element;
+                this.count++;
+            }
+
+            isEmpty() {
+                return this.count === 0;
+            }
+
+
+            traverse() {
+                if (this.isEmpty()) {
+                    console.log("Queue is empty.");
+                    return;
+                }
+
+                for (let index = 0; index < this.count; index++) {
+                    if (index === 0) {
+                        console.log(`Value at ${index}th position is ${this.items[index]}`);
+                    } else if (index === 1) {
+                        console.log(`Value at ${index}st position is ${this.items[index]}`);
+                    } else {
+                        console.log(`Value at ${index}nd position is ${this.items[index]}`);
+                    }
+                }
+            }
+        }
+
+        // Create and use the queue
+        const myQueue = new Queue();
+        myQueue.enqueue(10);
+        myQueue.enqueue(20);
+        myQueue.enqueue(30);
+        myQueue.enqueue(40);
+        myQueue.enqueue(51);
+
+        myQueue.traverse();
+    </script>
+</body>
+
+</html>
